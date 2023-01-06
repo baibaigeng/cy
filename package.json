@@ -1,0 +1,33 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress run --reporter reporters/custom.js",
+    "report": "yarn merge_reports && yarn generate_mochawesome_report",
+    "merge_reports": "mochawesome-merge > report.json",
+    "generate_mochawesome_report": "marge report.json",
+    "postreport": "npm run report:merge && npm run report:generate",
+    "run:gwm:prod": "cypress run --env environment=prod,site=gwm",
+    "open:gwm:prod": "cypress open --env environment=prod,site=gwm",
+    "run:gwm:stage": "cypress run --env environment=stage,site=gwm",
+    "open:gwm:stage": "cypress open --env environment=stage,site=gwm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chrome": "^0.1.0",
+    "prettier": "^1.16.4"
+  },
+  "devDependencies": {
+    "cypress": "^12.2.0",
+    "cypress-commands": "1.1.0",
+    "cypress-file-upload": "^5.0.8",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.2",
+    "mochawesome-report-generator": "^6.2.0"
+  }
+}

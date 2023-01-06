@@ -1,0 +1,8 @@
+{
+    "env":{
+        "environment":"stage"
+    },
+    "specPattern":"cypress/projects/**/e2e/*.cy.{js,jsx,ts,tsx}",
+    "supportFolder":"cypress/support/e2e.js",
+    "fixturesFolder":"cypress/projects/gwm/fixtures/stage"
+}
