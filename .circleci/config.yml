@@ -1,0 +1,15 @@
+jobs:
+  build:
+    environment:
+    TERM:xterm
+  working_directory: ~/app
+
+  -run:
+    name: install dependency
+    command: yarn
+
+  -run:
+    name: run gwm tests
+    command: yarn run:gwm:stage
+  - store_test_results:
+    path: results
