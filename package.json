@@ -14,6 +14,10 @@
     "run:gwm:stage": "cypress run --env environment=stage,site=gwm",
     "open:gwm:stage": "cypress open --env environment=stage,site=gwm"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baibaigeng/cy.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

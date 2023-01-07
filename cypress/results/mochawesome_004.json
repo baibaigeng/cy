@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-07T06:38:54.519Z",
+    "end": "2023-01-07T06:39:04.706Z",
+    "duration": 10187,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bfc09687-1527-4157-9085-b281bbce5439",
+      "title": "",
+      "fullFile": "cypress\\projects\\gwm\\e2e\\demo.cy.js",
+      "file": "cypress\\projects\\gwm\\e2e\\demo.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8682198e-35e1-4f17-a34d-693c2e68f243",
+          "title": "登录后的界面",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "测试主页",
+              "fullTitle": "登录后的界面 测试主页",
+              "timedOut": null,
+              "duration": 10162,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('.ivu-menu-light > :nth-child(3) > :nth-child(1)').click();\ncy.get('.header-lang.ivu-dropdown > .ivu-dropdown-rel > div').click();\ncy.get('.header-lang.ivu-dropdown > .ivu-select-dropdown > .ivu-dropdown-menu > :nth-child(3)').click();\ncy.get('[style=\"\"] > :nth-child(4) > .ivu-menu-submenu-title').click();\ncy.get(':nth-child(2) > .ivu-menu-opened > .ivu-menu > :nth-child(2)').click();\n//切换为主页",
+              "err": {},
+              "uuid": "3014dac1-851c-4d63-8c7f-bc9799da03f4",
+              "parentUUID": "8682198e-35e1-4f17-a34d-693c2e68f243",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3014dac1-851c-4d63-8c7f-bc9799da03f4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10162,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
