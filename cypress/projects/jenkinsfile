@@ -1,7 +1,6 @@
 pipeline {
      options {
             disableConcurrentBuilds()
-            ansiColor('xterm')
         }
     agent {
         label "autotest"
