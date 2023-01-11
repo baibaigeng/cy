@@ -3,7 +3,7 @@ pipeline {
             disableConcurrentBuilds()
         }
     agent {
-        label "none"
+        label any
     }
 
     triggers {
