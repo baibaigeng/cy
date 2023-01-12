@@ -16,7 +16,7 @@ pipeline {
                 script {
                     sh 'rm -R -f /var/jenkins_home/workspace/gwm-stage-UI/mochawesome-report'
                     sh 'rm -R -f /var/jenkins_home/workspace/gwm-stage-UI/cypress'
-                    sh 'yarn install'
+                    sh 'npm install'
                 }
             }
         }
@@ -26,7 +26,7 @@ pipeline {
             steps {
                 script {
                     try {
-                        sh 'yarn run:gwm:stage'
+                        sh 'npm run run:gwm:stage'
                     } catch (e) {
                         sh 'curl -H "Content-Type: application/json" -d \'{"msgtype": "text","text":{"content":"MK UAT UI 自动化测试失败"}}\'https://oapi.dingtalk.com/robot/send?access_token=edc0e25619ece3f30bfbbd6ea56e3bffef7e3ff18430a04048f00846947ad00f'
                         error 'MK UI 自动化测试失败'
