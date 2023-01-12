@@ -3,7 +3,7 @@ pipeline {
             disableConcurrentBuilds()
         }
     agent {
-        label 'jenkins-agent1'
+        label 'autotest'
     }
 
     triggers {
