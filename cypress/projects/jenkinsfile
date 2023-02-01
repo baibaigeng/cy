@@ -15,6 +15,7 @@ pipeline {
             steps {
                 script {
                     sh 'rm -R -f /var/jenkins_home/workspace/gwm-stage-UI/mochawesome-report'
+                    sh 'chmod 777 /root/.jenkins/workspace/GWM-stage-UI/node_modules/.bin/cypress'
                     sh 'rm -R -f /var/jenkins_home/workspace/gwm-stage-UI/cypress'
                     sh 'npm install'
                 }
