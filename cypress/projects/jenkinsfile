@@ -16,7 +16,7 @@ pipeline {
                 script {
                     sh 'rm -R -f /var/jenkins_home/workspace/cypress/mochawesome-report'
                     sh 'rm -R -f /var/jenkins_home/workspace/nba-uat-ui/cypress'
-                    sh 'npm install'
+                    sh 'cnpm install'
                 }
             }
         }
