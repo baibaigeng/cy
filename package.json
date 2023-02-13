@@ -4,11 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:open": "cypress run --reporter reporters/custom.js",
     "report": "yarn merge_reports && yarn generate_mochawesome_report",
-    "merge_reports": "mochawesome-merge > report.json",
+    "merge_reports": "mochawesome-merge ./mochawesome-report/*.json > report.json",
     "generate_mochawesome_report": "marge report.json",
-    "postreport": "npm run report:merge && npm run report:generate",
     "run:gwm:prod": "cypress run --env environment=prod,site=gwm",
     "open:gwm:prod": "cypress open --env environment=prod,site=gwm",
     "run:gwm:stage": "cypress run --env environment=stage,site=gwm",
@@ -18,7 +16,9 @@
     "type": "git",
     "url": "https://github.com/baibaigeng/cy.git"
   },
-  "keywords": [],
+  "keywords": [
+    "cypress"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
