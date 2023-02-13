@@ -12,7 +12,7 @@ module.exports = defineConfig({
     // fixturesFolder:"cypress/projects/gwm/fixtures/prod",
     reporter: 'mochawesome',
     reporterOptions: {
-      reportDir: 'cypress/results',
+      files:["cypress/mochawesome-report/*.json"],
       overwrite: false,
       html: false,
       json: true
