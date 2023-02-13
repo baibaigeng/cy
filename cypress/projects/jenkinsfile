@@ -16,7 +16,7 @@ pipeline {
                 script {
                     sh 'rm -R -f /var/jenkins_home/workspace/cypress/mochawesome-report'
                     sh 'rm -R -f /var/jenkins_home/workspace/nba-uat-ui/cypress'
-                    sh 'CYPRESS_CACHE_FOLDER=/root/.cache/Cypress/12.5.0/Cypress/Cypress yarn install'
+                    sh 'npm install'
                     sh 'chmod 777 /root/.jenkins/workspace/GWM-stage-UI/node_modules/.bin/cypress'
                 }
             }
