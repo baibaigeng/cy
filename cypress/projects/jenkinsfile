@@ -16,7 +16,7 @@ pipeline {
                 script {
                     sh 'rm -R -f /var/jenkins_home/workspace/cypress/mochawesome-report'
                     sh 'rm -R -f /var/jenkins_home/workspace/nba-uat-ui/cypress'
-                    sh 'yard install'
+                    sh 'yarn install'
                     sh 'chmod 777 /root/.jenkins/workspace/GWM-stage-UI/node_modules/.bin/cypress'
                 }
             }
@@ -27,12 +27,12 @@ pipeline {
             steps {
                 script {
                     try {
-                        sh 'yard run run:gwm:stage'
+                        sh 'yarn run run:gwm:stage'
                     } catch (e) {
                         sh 'curl -H "Content-Type: application/json" -d \'{"msgtype": "text","text":{"content":"MK UAT UI 自动化测试失败"}}\'https://oapi.dingtalk.com/robot/send?access_token=edc0e25619ece3f30bfbbd6ea56e3bffef7e3ff18430a04048f00846947ad00f'
                         error 'MK UI 自动化测试失败'
                     } finally {
-                        sh 'yard report'
+                        sh 'yarn report'
                     }
                 }
             }
