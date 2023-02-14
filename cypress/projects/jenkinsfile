@@ -34,8 +34,6 @@ pipeline {
                         error 'MK UI 自动化测试失败'
                     } finally {
                         sh 'npm run report'
-                    }catch (e) {
-                        sh 'curl -H "Content-Type: application/json" -d \'{"msgtype": "text","text":{"content":"自动化测试报告已生成，请查收"}}\' https://oapi.dingtalk.com/robot/send?access_token=edc0e25619ece3f30bfbbd6ea56e3bffef7e3ff18430a04048f00846947ad00f&timestamp=1676357150840&sign=jCyF5%2B0gnvp%2FepykQNwy2scBuvkBB9Mf92akU2hr21k%3D'
                     }
                 }
             }
