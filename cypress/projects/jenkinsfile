@@ -28,6 +28,7 @@ pipeline {
             steps {
                 script {
                     try {
+                        sh 'cnpm install wait-on'
                         sh 'npm start & wait-on https://ap2-operation-dashboard-test.gwmcloud.com/'
                         sh 'yarn run:gwm:stage'
                     } catch (e) {
