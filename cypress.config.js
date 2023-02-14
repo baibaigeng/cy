@@ -17,7 +17,6 @@ module.exports = defineConfig({
       html: false,
       json: true
     },
-    baseUrl:"https://ap2-operation-dashboard-test.gwmcloud.com/",
     numTestsKeptInMemory: 25,
     viewportWidth:1366,
     viewportHeight: 768,
