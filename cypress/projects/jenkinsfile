@@ -17,6 +17,7 @@ pipeline {
                     sh 'rm -R -f /var/jenkins_home/workspace/cypress/mochawesome-report'
                     sh 'rm -R -f /var/jenkins_home/workspace/nba-uat-ui/cypress'
                     sh 'yarn install'
+                    sh 'yarn add cypress --dev'
                     sh 'chmod 777 /root/.jenkins/workspace/GWM-stage-UI/node_modules/.bin/cypress'
                 }
             }
