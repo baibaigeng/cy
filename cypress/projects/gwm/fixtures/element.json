@@ -1,6 +1,5 @@
 {
-  "longinUsername":":nth-child(3) > .ivu-form-item-content > .ivu-input-wrapper > .ivu-input",
-  "loginPassword":":nth-child(4) > .ivu-form-item-content > .ivu-input-wrapper > .ivu-input",
-  "loginnum":"[style='height: 90px;'] > .ivu-form-item > .ivu-form-item-content > .ivu-input-wrapper > .ivu-input",
-  "loginbutton":".login-btn"
-}
+    "longinUsername":":nth-child(1) > .arco-col-19 > .arco-form-item-content-wrapper > .arco-form-item-content > .arco-input-wrapper > .arco-input",
+    "loginPassword":":nth-child(2) > .arco-col-19 > .arco-form-item-content-wrapper > .arco-form-item-content > .arco-input-wrapper > .arco-input",
+    "loginbutton":".arco-btn"
+  }
