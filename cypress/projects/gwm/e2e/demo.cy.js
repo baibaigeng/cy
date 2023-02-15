@@ -1,7 +1,7 @@
 
 describe("登录后的界面",()=>{
     beforeEach('先登录',()=>{
-        cy.GWMlogin()
+        cy.TESTlogin()
     })
     it('测试主页',()=>{
         cy.get('.ivu-menu-light > :nth-child(3) > :nth-child(1)').click()
