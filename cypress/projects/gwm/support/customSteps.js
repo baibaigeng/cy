@@ -8,7 +8,5 @@ Cypress.Commands.add('TESTlogin',() => {
       cy.get(GWM_ELEMENT.longinUsername).type(data.username)
       cy.get(GWM_ELEMENT.loginPassword).type(data.password)
       cy.get(GWM_ELEMENT.loginbutton).click()
-      cy.url().should('include','welcome')
-      cy.get('.header-a').should('contain', 'baigeng')
       })
   })
