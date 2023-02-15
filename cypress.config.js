@@ -17,6 +17,7 @@ module.exports = defineConfig({
       html: false,
       json: true
     },
+    baseUrl: "https://testservice.gwmdevops.com/#",
     numTestsKeptInMemory: 25,
     viewportWidth:1366,
     viewportHeight: 768,
