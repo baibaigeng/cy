@@ -32,9 +32,9 @@ pipeline {
                     } catch (e) {
                         curl 'https://oapi.dingtalk.com/robot/send?access_token=297a00fe174b436d81462b1d26de678a16e9caf190fbfd6b85709d4d40d129b9' \
                         --header 'Content-Type: application/json' \
-                        --data '{
-                        "msgtype":"text",
-                        "text":{"content":"nba自动化测试失败"}
+                        --data '{ \
+                        "msgtype":"text", \
+                        "text":{"content":"nba自动化测试失败"} \
                         }'                        
                         error 'nba UI 自动化测试失败'
                         error 'MK UI 自动化测试失败'
