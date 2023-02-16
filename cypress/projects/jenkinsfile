@@ -15,6 +15,7 @@ pipeline {
             steps {
                 script {
                     sh 'rm -R -f /root/.jenkins/workspace/GWM-stage-UI/mochawesome-report'
+                    sh 'chmod 777 /root/.jenkins/workspace/GWM-stage-UI/node_modules/.bin/cypress'
                     sh 'yarn install'
                 }
             }
