@@ -31,7 +31,7 @@ pipeline {
                     try {
                         sh 'yarn run:gwm:prod'
                     } catch (e) {
-                        curl 'www.baidu.com'
+                        sh 'curl "www.baidu.com"'
                         error 'nba UI 自动化测试失败'
                         error 'MK UI 自动化测试失败'
                     } finally {
