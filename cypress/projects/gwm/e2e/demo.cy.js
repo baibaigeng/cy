@@ -4,7 +4,7 @@ describe("登录后的界面",()=>{
         cy.TESTlogin()
     })
     it('测试主页',()=>{
-        cy.get('[style="text-align: right;"] > .arco-space > :nth-child(2) > .arco-btn').click()
+        cy.get('[style="text-align: right;"] > .arco-space > :nth-child(2) > .arco-btn2').click()
         //切换为主页
     })
 
